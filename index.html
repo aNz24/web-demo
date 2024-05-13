@@ -1,122 +1,541 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ?</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Shopee - Mua hàng nhanh, hàng chuẩn, ship nhanh</title>
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+    />
   </head>
   <body>
-    <div>
-      
-    </div>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=500px></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="logo">
+              <div class="logo-1"><img src="/image/" alt="" /></div>
+              <div class="logo-2">BRAND NAME</div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="logo-icon">
+              <a href="" class="icon-link"><i class="fa-solid fa-user"></i></a>
+              <a href="" class="icon-link"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+              <a href="" class="icon-link"><i class="fa-solid fa-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-header">
+          <h1><hr class="thanhngang1" /></h1>
+          <ul>
+            <li>
+              <a href="">Trang chủ</a>
+            </li>
+            <li>
+              <a href="">Sản phẩm</a>
+            </li>
+            <li>
+              <a href="">Hãng</a>
+            </li>
+            <li>
+              <a href="">Phụ kiện</a>
+            </li>
+            <li>
+              <a href="">Liên hệ</a>
+            </li>
+          </ul>
+          <h1><hr class="thanhngang1" /></h1>
+          <!-- <div class="header-timkiem">
+            <input type="text" placeholder="Search" class="form-timkiem">
+            <button class="btn btn-text" type="button" id="btn-timkiem">Tìm kiếm</button>
+          </div> -->
+        </div>
+        <div class="search">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Search
+            </button>
+          </div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">?</div>
+    </header>
+    <section class="p1">
+      <div class="container">
+        <div class="row">
+          <div class="baner">
+            <div class="col-lg-6">
+              <img
+                src="/image/samsung-galaxy-a23.png"
+                alt="Điện thoại sam sung a23"
+                class="a23-sale"
+              />
+            </div>
+            <div class="col-lg-6">
+              <div class="col-lg-6-center">
+                <div class="col-lg-6-header">HOT DEALS THIS WEEK</div>
+                <div class="col-lg-6-content">
+                  SALE 50% OFF MODERN FURNITURE
+                </div>
+                <div class="col-lg-6-footer">
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    VIEW NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <script>
-      var container = document.querySelector("#unity-container");
-      var canvas = document.querySelector("#unity-canvas");
-      var loadingBar = document.querySelector("#unity-loading-bar");
-      var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-      var warningBanner = document.querySelector("#unity-warning");
+    </section>
+    <section class="product">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="row-product">
+              <img
+                src="image/iPhone 15 Pro Max.png"
+                alt=""
+                class="img-product"
+              />
+              <div class="product-content">
+                <a href="">iPhone 15 Pro Max</a>
+              </div>
+              <div class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
 
-      // Shows a temporary message banner/ribbon for a few seconds, or
-      // a permanent error message on top of the canvas if type=='error'.
-      // If type=='warning', a yellow highlight color is used.
-      // Modify or remove this function to customize the visually presented
-      // way that non-critical warnings and error messages are presented to the
-      // user.
-      function unityShowBanner(msg, type) {
-        function updateBannerVisibility() {
-          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
-        }
-        var div = document.createElement('div');
-        div.innerHTML = msg;
-        warningBanner.appendChild(div);
-        if (type == 'error') div.style = 'background: red; padding: 10px;';
-        else {
-          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-          setTimeout(function() {
-            warningBanner.removeChild(div);
-            updateBannerVisibility();
-          }, 5000);
-        }
-        updateBannerVisibility();
-      }
+              <div class="product-price">29.590.000<sup>đ</sup></div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row-product">
+              <img
+                src="image/iPhone 15 Pro Max.png"
+                alt=""
+                class="img-product"
+              />
+              <div class="product-content">
+                <a href="">iPhone 15 Pro Max</a>
+              </div>
+              <div class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="product-price">29.590.000<sup>đ</sup></div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row-product">
+              <img
+                src="image/iPhone 15 Pro Max.png"
+                alt=""
+                class="img-product"
+              />
+              <div class="product-content">
+                <a href="">iPhone 15 Pro Max</a>
+              </div>
+              <div class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="product-price">29.590.000<sup>đ</sup></div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row-product">
+              <img
+                src="image/iPhone 15 Pro Max.png"
+                alt=""
+                class="img-product"
+              />
+              <div class="product-content">
+                <a href="">iPhone 15 Pro Max</a>
+              </div>
+              <div class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="product-price">29.590.000<sup>đ</sup></div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row-product">
+              <img
+                src="image/iPhone 15 Pro Max.png"
+                alt=""
+                class="img-product"
+              />
+              <div class="product-content">
+                <a href="">iPhone 15 Pro Max</a>
+              </div>
+              <div class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="product-price">29.590.000<sup>đ</sup></div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row-product">
+              <img
+                src="image/iPhone 15 Pro Max.png"
+                alt=""
+                class="img-product"
+              />
+              <div class="product-content">
+                <a href="">iPhone 15 Pro Max</a>
+              </div>
+              <div class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="product-price">29.590.000<sup>đ</sup></div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row-product">
+              <img
+                src="image/iPhone 15 Pro Max.png"
+                alt=""
+                class="img-product"
+              />
+              <div class="product-content">
+                <a href="">iPhone 15 Pro Max</a>
+              </div>
+              <div class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="product-price">29.590.000<sup>đ</sup></div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row-product">
+              <img
+                src="image/iPhone 15 Pro Max.png"
+                alt=""
+                class="img-product"
+              />
+              <div class="product-content">
+                <a href="">iPhone 15 Pro Max</a>
+              </div>
+              <div class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="product-price">29.590.000<sup>đ</sup></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/webgl.loader.js";
-      var config = {
-        dataUrl: buildUrl + "/webgl.data",
-        frameworkUrl: buildUrl + "/webgl.framework.js",
-        codeUrl: buildUrl + "/webgl.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "supercar",
-        productVersion: "0.1",
-        showBanner: unityShowBanner,
-      };
+    <section class="promotion">
+      <div class="container">
+        <div class="khuyenmai">
+          <img src="/image/Khuyenmai.png" alt="Khuyến mãi" />
+        </div>
 
-      // By default Unity keeps WebGL canvas render target size matched with
-      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
-      // Set this to false if you want to decouple this synchronization from
-      // happening inside the engine, and you would instead like to size up
-      // the canvas DOM size and WebGL render target sizes yourself.
-      // config.matchWebGLToCanvasSize = false;
+        <!-- top rating -->
+        <div class="top">TOP RATING</div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="rating">
+              <div class="rating-img">
+                <img
+                  src="/image/Top-rating/IPhone 13 128GB.png"
+                  alt="IPhone 13 128GB"
+                />
+              </div>
+              <div class="rating-content">
+                <div class="product-content">
+                  <a href="">iPhone 15 Pro Max</a>
+                </div>
+                <div class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
+                <div class="product-price">29.590.000<sup>đ</sup></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="rating">
+              <div class="rating-img">
+                <img
+                  src="/image/Top-rating/IPhone 13 128GB.png"
+                  alt="IPhone 13 128GB"
+                />
+              </div>
+              <div class="rating-content">
+                <div class="product-content">
+                  <a href="">iPhone 15 Pro Max</a>
+                </div>
+                <div class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
 
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
-        container.className = "unity-mobile";
-        canvas.className = "unity-mobile";
+                <div class="product-price">29.590.000<sup>đ</sup></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="rating">
+              <div class="rating-img">
+                <img
+                  src="/image/Top-rating/IPhone 13 128GB.png"
+                  alt="IPhone 13 128GB"
+                />
+              </div>
+              <div class="rating-content">
+                <div class="product-content">
+                  <a href="">iPhone 15 Pro Max</a>
+                </div>
+                <div class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
 
-        // To lower canvas resolution on mobile devices to gain some
-        // performance, uncomment the following line:
-        // config.devicePixelRatio = 1;
+                <div class="product-price">29.590.000<sup>đ</sup></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="rating">
+              <div class="rating-img">
+                <img
+                  src="/image/Top-rating/IPhone 13 128GB.png"
+                  alt="IPhone 13 128GB"
+                />
+              </div>
+              <div class="rating-content">
+                <div class="product-content">
+                  <a href="">iPhone 15 Pro Max</a>
+                </div>
+                <div class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
 
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
-      } else {
-        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+                <div class="product-price">29.590.000<sup>đ</sup></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="rating">
+              <div class="rating-img">
+                <img
+                  src="/image/Top-rating/IPhone 13 128GB.png"
+                  alt="IPhone 13 128GB"
+                />
+              </div>
+              <div class="rating-content">
+                <div class="product-content">
+                  <a href="">iPhone 15 Pro Max</a>
+                </div>
+                <div class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
 
-        canvas.style.width = "1200px";
-        canvas.style.height = "500px";
-      }
+                <div class="product-price">29.590.000<sup>đ</sup></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="rating">
+              <div class="rating-img">
+                <img
+                  src="/image/Top-rating/IPhone 13 128GB.png"
+                  alt="IPhone 13 128GB"
+                />
+              </div>
+              <div class="rating-content">
+                <div class="product-content">
+                  <a href="">iPhone 15 Pro Max</a>
+                </div>
+                <div class="star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
 
-      loadingBar.style.display = "block";
+                <div class="product-price">29.590.000<sup>đ</sup></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- top rating -->
+        <div class="loadmode">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            Load Mode
+          </button>
+        </div>
+      </div>
+    </section>
 
-      var script = document.createElement("script");
-      script.src = loaderUrl;
-      script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
-      };
-      document.body.appendChild(script);
-    </script>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="left">
+              <div class="left-top">BRAND NAME</div>
+              <div class="left-mid">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </div>
+              <div class="left-down">
+                <div class="content">121 king street, Melbourne 3000</div>
+                <div class="content">+123456789</div>
+                <div class="content">contact@brandemail.com</div>
+              </div>
+              <div class="left-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="mid">
+              <div class="col-lg-6">
+                <div class="footer-header">SHOPPING</div>
+                <div class="footer-content">
+                  <ul class="footer-content-menu">
+                    <li>
+                      <a href="">aaaaaa</a>
+                    </li>
+                    <li>
+                      <a href="">bbbbbbbb</a>
+                    </li>
+                    <li>
+                      <a href="">ccccccccc</a>
+                    </li>
+                    <li>
+                      <a href="">dddddd</a>
+                    </li>
+                    <li>
+                      <a href="">eeeeee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="footer-header">MORE LINK</div>
+                <div class="footer-content">
+                  <ul class="footer-content-menu">
+                    <li>
+                      <a href="">aaaaaa</a>
+                    </li>
+                    <li>
+                      <a href="">bbbbbbbb</a>
+                    </li>
+                    <li>
+                      <a href="">ccccccccc</a>
+                    </li>
+                    <li>
+                      <a href="">dddddd</a>
+                    </li>
+                    <li>
+                      <a href="">eeeeee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
