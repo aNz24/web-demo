@@ -26,12 +26,19 @@ body {
   flex-shrink: 0;
   /* background: url(<path-to-image>) lightgray 50% / cover no-repeat; */
 }
+.logo .logo-1 img {
+  width: 60px;
+  height: 60px;
+}
 .logo .logo-2 {
   font-family: Roboto;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.logo .logo-2 span {
+  background-color: #f9d370;
 }
 
 .logo-icon {
@@ -41,18 +48,15 @@ body {
   float: right;
 }
 .logo-icon .fa-user {
-  width: 34px;
-  height: 37px;
-}
-.logo-icon .fa-cart-shopping {
-  width: 34px;
-  height: 34px;
+  width: 20%;
+  height: 30%;
 }
 .logo-icon .icon-link:before {
   content: none;
 }
 .logo-icon .icon-link i {
-  font-size: 25px;
+  font-size: 30px;
+  margin-left: 45px;
   color: black;
 }
 .menu-header {
@@ -117,10 +121,10 @@ body {
 .baner {
   display: flex;
 }
-.a23-sale {
+.cos-hot {
   width: 412px;
   height: auto;
-  margin: 55.5px 72px 52px;
+  margin: 85.5px 70px 62px;
 }
 .col-lg-6 .col-lg-6-header {
   color: #323334;
@@ -217,7 +221,7 @@ label.star:before {
   float: left;
 }
 .img-product {
-  width: 306px;
+  width: 100%;
   height: auto;
 }
 .product-content {
@@ -235,7 +239,7 @@ label.star:before {
   color: black;
   margin-left: 5%;
 }
-.product-price {
+.product-play {
   width: 71px;
   height: 36px;
   color: #323334;
@@ -246,6 +250,9 @@ label.star:before {
   font-weight: 700;
   line-height: normal;
   margin-left: 5%;
+}
+.product-play button {
+  width: 200%;
 }
 .fa-star {
   font-size: 180%;
@@ -295,6 +302,18 @@ label.star:before {
 .rating-content {
   margin-top: 6%;
   width: 216px;
+}
+.rating-product-play {
+  width: 71px;
+  height: 36px;
+  color: #323334;
+
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 5%;
 }
 
 .promotion .container .loadmode {
