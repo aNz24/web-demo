@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Gamevui-giải trí</title>
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/image/favicon//apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/image/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/image/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/image/favicon//site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="flag">
+            <div class="col-lg-6">
+              <div class="logo">
+                <div class="logo-1"><img src="image/logo.png" alt="" /></div>
+                <div class="logo-2">GAME<span>VUI</span></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="logo-icon">
+                <a href="" class="icon-link"
+                  ><i class="fa-solid fa-user"></i
+                ></a>
+                <a href="" class="icon-link check"
+                  ><i class="fa-solid fa-bars"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <div class="menu-header">
+            <h1><hr class="thanhngang1" /></h1>
+            <ul class="dsmenu">
+              <li>
+                <a class="active" href="index.html">Trang chủ</a>
+              </li>
+              <li>
+                <a href="">Giải trí</a>
+              </li>
+              <li>
+                <a href="">Kinh dị</a>
+              </li>
+              <li>
+                <a href="">Chiến thuật</a>
+              </li>
+              <li>
+                <a href="">Thể thao</a>
+              </li>
+            </ul>
+            <h1><hr class="thanhngang1" /></h1>
+            <!-- <div class="header-timkiem">
+            <input type="text" placeholder="Search" class="form-timkiem">
+            <button class="btn btn-text" type="button" id="btn-timkiem">Tìm kiếm</button>
+          </div> -->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="checkout__form">
+          <h3>Thông tin đăng ký</h3>
+          <form id="checkoutForm" action="#">
+            <div class="row">
+              <div class="col-lg-8 col-md-6">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="checkout__input">
+                      <p>Tên<span>*</span></p>
+                      <input
+                        type="text"
+                        id="firstNameInput"
+                        placeholder="Nhập tên của bạn"
+                      />
+                      <div
+                        class="error-message"
+                        id="firstNameErrorMessage"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="checkout__input">
+                      <p>Họ<span>*</span></p>
+                      <input
+                        type="text"
+                        id="lastNameInput"
+                        placeholder="Nhập họ của bạn ..."
+                      />
+                      <div
+                        class="error-message"
+                        id="lastNameErrorMessage"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="checkout__input">
+                      <p>Email<span>*</span></p>
+                      <input
+                        type="text"
+                        id="emailNameInput"
+                        placeholder="Nhập email của bạn..."
+                      />
+                      <div
+                        class="error-message"
+                        id="emailNameErrorMessage"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="checkout__input">
+                      <p>Tên đăng nhập<span>*</span></p>
+                      <input
+                        type="text"
+                        id="userNameInput"
+                        placeholder="Nhập tên đăng nhập của bạn ..."
+                      />
+                      <div
+                        class="error-message"
+                        id="userNameErrorMessage"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="checkout__input">
+                      <p>Mật khẩu<span>*</span></p>
+                      <input
+                        type="password"
+                        id="passInput"
+                        placeholder="Nhập mật khẩu của bạn..."
+                      />
+                      <div class="error-message" id="passErrorMessage"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="checkout__input">
+                      <p>Xác nhận lại mật khẩu<span>*</span></p>
+                      <input
+                        type="password"
+                        id="passAgainInput"
+                        placeholder="Nhập lại mật khẩu của bạn..."
+                      />
+                      <div
+                        class="error-message"
+                        id="passAgainErrorMessage"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="checkout__input">
+                      <p>Số điện thoại<span>*</span></p>
+                      <input
+                        type="text"
+                        id="numberInput"
+                        placeholder="Nhập số điện thoại của bạn..."
+                      />
+                      <div class="error-message" id="numberErrorMessage"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <button
+                      type="button"
+                      class="site-btn"
+                      onclick="validateForm()"
+                    >
+                      Đăng kí
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="left">
+              <div class="left-top">GAME VUI</div>
+              <div class="left-mid">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </div>
+              <div class="left-down">
+                <div class="content">
+                  180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh
+                </div>
+                <div class="content">+123456789</div>
+                <div class="content">zhuy105503@gmail.com</div>
+              </div>
+              <div class="left-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="mid">
+              <div class="col-lg-6">
+                <div class="footer-header">GAME</div>
+                <div class="footer-content">
+                  <ul class="footer-content-menu">
+                    <li>
+                      <a href="">aaaaaa</a>
+                    </li>
+                    <li>
+                      <a href="">bbbbbbbb</a>
+                    </li>
+                    <li>
+                      <a href="">ccccccccc</a>
+                    </li>
+                    <li>
+                      <a href="">dddddd</a>
+                    </li>
+                    <li>
+                      <a href="">eeeeee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="footer-header">MORE LINK</div>
+                <div class="footer-content">
+                  <ul class="footer-content-menu">
+                    <li>
+                      <a href="">aaaaaa</a>
+                    </li>
+                    <li>
+                      <a href="">bbbbbbbb</a>
+                    </li>
+                    <li>
+                      <a href="">ccccccccc</a>
+                    </li>
+                    <li>
+                      <a href="">dddddd</a>
+                    </li>
+                    <li>
+                      <a href="">eeeeee</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -446,6 +446,44 @@ footer .container .row {
   line-height: normal;
 }
 
+/* Login */
+.checkout__form h3 {
+  color: #1c1c1c;
+  font-weight: 700;
+  font-size: 30px;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+.checkout__input p {
+  color: #1c1c1c;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.checkout__input {
+  margin-bottom: 24px;
+}
+
+.checkout__input p {
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+
+.checkout__input p span {
+  color: #dd2222;
+}
+.checkout__input input {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #ebebeb;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #b2b2b2;
+  border-radius: 4px;
+}
+/* End login */
+
 /* repository */
 
 /* @media (max-width: 952px) {
