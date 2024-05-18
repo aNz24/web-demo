@@ -60,49 +60,60 @@
           <div class="flag">
             <div class="col-lg-6">
               <div class="logo">
-                <div class="logo-1"><img src="image/logo.png" alt="" /></div>
-                <div class="logo-2">GAME<span>VUI</span></div>
+                <div class="logo-1">
+                  <a href="index.html"><img src="image/logo.png" alt="" /></a>
+                </div>
+                <div class="logo-2">
+                  <a href="index.html">GAME<span>VUI</span></a>
+                </div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="logo-icon">
-                <a href="" class="icon-link"
-                  ><i class="fa-solid fa-user"></i
-                ></a>
-                <a href="" class="icon-link check"
-                  ><i class="fa-solid fa-bars"></i
-                ></a>
+                <a href="login.html" class="icon-link"
+                  ><button type="button">Đăng nhập</button></a
+                >
+                <a href="register.html" class="icon-link"
+                  ><button type="button">Đăng kí</button></a
+                >
               </div>
             </div>
           </div>
         </div>
-        <nav>
-          <div class="menu-header">
-            <h1><hr class="thanhngang1" /></h1>
-            <ul class="dsmenu">
-              <li>
-                <a class="active" href="index.html">Trang chủ</a>
-              </li>
-              <li>
-                <a href="">Giải trí</a>
-              </li>
-              <li>
-                <a href="">Kinh dị</a>
-              </li>
-              <li>
-                <a href="">Chiến thuật</a>
-              </li>
-              <li>
-                <a href="">Thể thao</a>
-              </li>
-            </ul>
-            <h1><hr class="thanhngang1" /></h1>
-            <!-- <div class="header-timkiem">
+
+        <div class="menu-header">
+          <h1><hr class="thanhngang1" /></h1>
+          <nav class="navbar">
+            <input type="checkbox" id="toggler" />
+            <label for="toggler">
+              <i class="fa fa-bars"></i>
+            </label>
+            <div class="menu">
+              <ul class="dsmenu">
+                <li>
+                  <a class="active" href="index.html">Trang chủ</a>
+                </li>
+                <li>
+                  <a href="">Giải trí</a>
+                </li>
+                <li>
+                  <a href="">Kinh dị</a>
+                </li>
+                <li>
+                  <a href="">Chiến thuật</a>
+                </li>
+                <li>
+                  <a href="">Thể thao</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <h1><hr class="thanhngang1" /></h1>
+          <!-- <div class="header-timkiem">
             <input type="text" placeholder="Search" class="form-timkiem">
             <button class="btn btn-text" type="button" id="btn-timkiem">Tìm kiếm</button>
           </div> -->
-          </div>
-        </nav>
+        </div>
       </div>
     </header>
     <section>
@@ -206,13 +217,15 @@
                     </div>
                   </div>
                   <div class="col-lg-12">
-                    <button
-                      type="button"
-                      class="site-btn"
-                      onclick="validateForm()"
-                    >
-                      Đăng kí
-                    </button>
+                    <div class="dangki">
+                      <button
+                        type="button"
+                        class="site-btn"
+                        onclick="validateForm()"
+                      >
+                        Đăng kí
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>

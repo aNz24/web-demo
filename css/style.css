@@ -45,7 +45,10 @@ body {
 .logo .logo-2 span {
   background-color: #f9d370;
 }
-
+.logo .logo-2 a {
+  text-decoration: none;
+  color: black;
+}
 .logo-icon {
   width: 28%;
   height: 55%;
@@ -53,29 +56,40 @@ body {
   float: right;
   display: flex;
 }
-.logo-icon .fa-user {
-  width: 20%;
-  height: 30%;
+.logo-icon .icon-link button {
+  background-color: #4c8787;
+  width: 150%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 130%;
+  color: white;
+}
+.logo-icon .icon-link {
+  margin-right: 30%; /* Khoảng cách giữa các nút */
+}
+
+/* Loại bỏ khoảng cách cuối cùng */
+.logo-icon .icon-link:last-child {
+  margin-right: 0;
 }
 .logo-icon .icon-link:before {
   content: none;
 }
-.logo-icon .icon-link i {
-  font-size: 30px;
-  margin-left: 45px;
-  color: black;
-}
 /* end logo */
 /* menu */
+/* .navbar {
+  width: 100%;
+  display: flex;
+}
 .menu-header {
   width: 100%;
   height: 41px;
 }
-.menu-header ul {
+.menu-header nav ul {
   list-style: none;
   display: flex;
 }
-.menu-header ul li {
+.menu-header nav ul li {
   color: #323334;
   font-family: Roboto;
   font-size: 16px;
@@ -85,22 +99,39 @@ body {
   margin-left: 10%;
   display: inline-block;
 }
-.menu-header ul li a {
+.menu-header nav ul li a {
   text-decoration: none;
   color: black;
+  padding: 7px 13px;
+  border-radius: 3px;
   text-transform: uppercase;
-}
-a.active,
-a:hover {
-  background-color: #1b9bff;
-  transition: 0.5s;
-}
+} */
 
-.check {
-  cursor: pointer;
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 15px;
+}
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+.dsmenu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  font-size: 240%;
+}
+#tonggler,
+.navbar label {
   display: none;
 }
-
+input#toggler {
+  visibility: hidden;
+}
 /* .thanhngang1:not([size]) {
   height: 3px;
   border-color: black;
@@ -121,14 +152,14 @@ hr:not([size]) {
 
 .search .input-group .btn {
   width: 15%;
-  font-size: 20px;
+  font-size: 140%;
   color: white;
   background-color: #4c8787;
 }
 .search .input-group .form-control {
   width: 60%;
   height: 54px;
-  font-size: 20px;
+  font-size: 140%;
 }
 
 .search .input-group :focus {
@@ -482,26 +513,80 @@ footer .container .row {
   color: #b2b2b2;
   border-radius: 4px;
 }
+.dangki {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-btn {
+  width: 40%;
+  font-size: 20px;
+  background-color: #4c8787;
+  color: white;
+}
 /* End login */
+
+/* Game */
+
+#unity-container.unity-desktop {
+  left: 50%;
+  /* top: 45%; */
+  margin-top: 15%;
+  transform: translate(-50%, -50%);
+}
+.game-info {
+  margin-top: 25%;
+}
+.game-info h3 {
+  font-size: 30px;
+}
+.game-info .img-game {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-info .img-game img {
+  width: 40%;
+  height: auto;
+}
+.game-info .game-info-content .huongdan {
+  display: flex;
+}
+#footer-game {
+  margin-top: 10%;
+}
+/* End Game */
 
 /* repository */
 
-/* @media (max-width: 952px) {
+@media (max-width: 952px) {
+  nav ul li a {
+    font-size: 16px;
+  }
 }
-@media (max-width: 858px) {
-  .check {
-    display: block;
-  }
-  .menu-header .dsmenu {
-    position: fixed;
+@media screen and (max-width: 858px) {
+  .menu {
     width: 100%;
-    height: 50vh;
-    background: #4c8787;
-    top: 124px;
-    left: 0;
-    text-align: center;
+    max-height: 0;
+    overflow: hidden;
   }
-  div ul li {
-    display: block;
+  .dsmenu {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
-} */
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+  }
+  i.fa.fa-bars {
+    font-size: 200%;
+    transition: 0.5s;
+  }
+}

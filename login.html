@@ -114,117 +114,57 @@
             <button class="btn btn-text" type="button" id="btn-timkiem">Tìm kiếm</button>
           </div> -->
         </div>
-        <div class="search">
-          <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search"
-              aria-label="Recipient's username"
-              aria-describedby="button-addon2"
-            />
-            <button
-              class="btn btn-outline-secondary"
-              type="button"
-              id="button-addon2"
-            >
-              Search
-            </button>
-          </div>
-        </div>
       </div>
     </header>
-    <section class="p1">
+    <section>
       <div class="container">
-        <div class="row">
-          <div class="baner">
-            <div class="col-lg-6">
-              <img
-                src="/image/clash-of-stone.png"
-                alt="Điện thoại sam sung a23"
-                class="cos-hot"
-              />
-            </div>
-            <div class="col-lg-6">
-              <div class="col-lg-6-center">
-                <div class="col-lg-6-header">TRÒ CHƠI HOT TRONG TUẦN</div>
-                <div class="col-lg-6-content">ĐÂY LÀ GAME MÔ PHỎNG ....</div>
-                <div class="col-lg-6-footer">
-                  <button
-                    class="btn btn-outline-secondary"
-                    type="button"
-                    id="button-addon2"
-                  >
-                    CHƠI NGAY
-                  </button>
+        <div class="checkout__form">
+          <h3>Thông tin đăng nhập</h3>
+          <form id="checkoutForm" action="#">
+            <div class="row">
+              <div class="col-lg-8 col-md-6">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="checkout__input">
+                      <p>Tên đăng nhập<span>*</span></p>
+                      <input
+                        type="text"
+                        id="userNameInput"
+                        placeholder="Nhập tên đăng nhập của bạn ..."
+                      />
+                      <div
+                        class="error-message"
+                        id="userNameErrorMessage"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="checkout__input">
+                      <p>Mật khẩu<span>*</span></p>
+                      <input
+                        type="password"
+                        id="passInput"
+                        placeholder="Nhập mật khẩu của bạn..."
+                      />
+                      <div class="error-message" id="passErrorMessage"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="dangki">
+                      <button
+                        type="button"
+                        class="site-btn"
+                        onclick="validateForm()"
+                      >
+                        Đăng kí
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="product">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="row-product">
-              <img src="image/Game1.png" alt="" class="img-product" />
-              <div class="product-content">
-                <a href="game1.html">Low die teen eye</a>
-              </div>
-              <div class="star">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-
-              <div class="product-play">
-                <a href="game1.html"><button type="button">Chơi</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="promotion">
-      <div class="container">
-        <div class="khuyenmai">
-          <img src="/image/pubg-pixel.jpg" alt="Khuyến mãi" />
-        </div>
-
-        <!-- top rating -->
-        <div class="top">TOP GAME</div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="rating">
-              <div class="rating-img">
-                <img src="/image/Game1.png" alt="IPhone 13 128GB" />
-              </div>
-              <div class="rating-content">
-                <div class="product-content">
-                  <a href="">Low die teen eye</a>
-                </div>
-
-                <div class="rating-product-play">
-                  <a href="game1.html"><button type="button">Chơi</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- top rating -->
-        <div class="loadmode">
-          <button
-            class="btn btn-outline-secondary"
-            type="button"
-            id="button-addon2"
-          >
-            Load Mode
-          </button>
+          </form>
         </div>
       </div>
     </section>
@@ -306,5 +246,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
