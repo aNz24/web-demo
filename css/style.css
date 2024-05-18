@@ -347,7 +347,6 @@ label.star:before {
   width: 100%;
   height: auto;
   margin: 0% 2px 6% 2%;
-  /* flex-wrap: wrap; */
 }
 
 .rating-img img {
@@ -363,7 +362,6 @@ rating-content {
   width: 71px;
   height: 36px;
   color: #323334;
-
   font-family: Roboto;
   font-size: 24px;
   font-style: normal;
@@ -381,9 +379,7 @@ rating-content {
 .promotion .container .loadmode .btn {
   width: 273px;
   height: 51px;
-
   color: #fff;
-
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -392,6 +388,23 @@ rating-content {
   text-transform: uppercase;
   background-color: #4c8787;
   align-self: center;
+  cursor: pointer;
+}
+.loadmore {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loadmore .btn {
+  padding: 10px 20px;
+  background-color: #4c8787;
+  color: #fff;
+  border: none;
+  font-size: 175%;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
 }
 
 /* footer */
@@ -437,8 +450,8 @@ footer .container .row {
 }
 .left-icon {
   display: flex;
-  width: 286.667px;
-  height: 19.873px;
+  width: 75%;
+  height: 50%;
   padding-right: 0px;
   justify-content: center;
   align-items: flex-start;
@@ -448,33 +461,6 @@ footer .container .row {
 .left-icon i {
   font-size: 200%;
   color: white;
-}
-.footer-header {
-  color: #f3f6ff;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin: 24.18% 0 0 11%;
-}
-.mid {
-  display: flex;
-}
-.footer-content-menu {
-  margin: 22px 0 0 2%;
-}
-.footer-content-menu li {
-  margin-top: 16px;
-}
-.footer-content-menu li a {
-  text-decoration: none;
-  color: var(--Page-color, #f3f6ff);
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
 
 /* Login */
