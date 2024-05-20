@@ -6,23 +6,219 @@
     <title>Unity WebGL Player | FPS2</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Gamevui-giải trí</title>
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/image/favicon//apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/image/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/image/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/image/favicon//site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="flag">
+            <div class="col-lg-6">
+              <div class="logo">
+                <div class="logo-1">
+                  <a href="index.html"><img src="image/logo.png" alt="" /></a>
+                </div>
+                <div class="logo-2">
+                  <a href="index.html">GAME<span>VUI</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="logo-icon">
+                <a href="login.html" class="icon-link"
+                  ><button type="button">Đăng nhập</button></a
+                >
+                <a href="register.html" class="icon-link"
+                  ><button type="button">Đăng kí</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-header">
+          <h1><hr class="thanhngang1" /></h1>
+          <nav class="navbar">
+            <input type="checkbox" id="toggler" />
+            <label for="toggler">
+              <i class="fa fa-bars"></i>
+            </label>
+            <div class="menu">
+              <ul class="dsmenu">
+                <li>
+                  <a class="active" href="index.html">Trang chủ</a>
+                </li>
+                <li>
+                  <a href="">Giải trí</a>
+                </li>
+                <li>
+                  <a href="">Kinh dị</a>
+                </li>
+                <li>
+                  <a href="">Chiến thuật</a>
+                </li>
+                <li>
+                  <a href="">Thể thao</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <h1><hr class="thanhngang1" /></h1>
+          <!-- <div class="header-timkiem">
+            <input type="text" placeholder="Search" class="form-timkiem">
+            <button class="btn btn-text" type="button" id="btn-timkiem">Tìm kiếm</button>
+          </div> -->
+        </div>
+        <div class="search">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Search
+            </button>
+          </div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">FPS2</div>
+    </header>
+    <section style="height: 500px">
+      <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas" width="960" height="500px"></canvas>
+        <div id="unity-loading-bar">
+          <div id="unity-logo"></div>
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
+        </div>
+        <div id="unity-warning"></div>
+        <div id="unity-footer">
+          <div id="unity-webgl-logo"></div>
+          <div id="unity-fullscreen-button"></div>
+          <div id="unity-build-title">?</div>
+        </div>
       </div>
-    </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="game-info">
+              <h3>Cách chơi game</h3>
+              <div class="img-game">
+                <img src="/image/Hinh-game1.png" alt="" />
+              </div>
+              <div class="game-info-content">
+                <h4>Hướng dẫn chi tiết</h4>
+                <div class="huongdan">
+                  <br />
+                  <pre>Di chuyển bằng </pre>
+                  <div class="train">
+                    <img src="/image/Trainning/A.png" alt="" />
+                  </div>
+                  <div style="display: block">
+                    <div class="train">
+                      <img src="/image/Trainning/S.png" alt="" />
+                    </div>
+                    <div class="train">
+                      <img src="/image/Trainning/W.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="train">
+                    <img src="/image/Trainning/D.png" alt="" />
+                  </div>
+                  <p>Sử dụng chuột để chuyển hướng</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer-game">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="left">
+              <div class="left-top">GAME VUI</div>
+              <div class="left-mid">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </div>
+              <div class="left-down">
+                <div class="content">
+                  180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh
+                </div>
+                <div class="content">+123456789</div>
+                <div class="content">zhuy105503@gmail.com</div>
+              </div>
+              <div class="left-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> 
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
