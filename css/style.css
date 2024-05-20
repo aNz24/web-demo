@@ -12,6 +12,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 /* phần header */
+header.trangchu {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 225px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .flag {
   display: flex;
 }
@@ -213,7 +222,18 @@ hr:not([size]) {
 .col-lg-6 .col-lg-6-center {
   padding-top: 30%;
 }
-
+.w-100 {
+  width: 100% !important;
+  height: 507px;
+}
+.carousel.pointer-event {
+  touch-action: pan-y;
+  width: 100%;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+}
 /* Star */
 div.stars {
   width: 270px;
@@ -280,7 +300,7 @@ label.star:before {
 }
 .img-product {
   width: 100%;
-  height: auto;
+  height: 180px;
 }
 .product-content {
   color: #323334;
@@ -317,6 +337,18 @@ label.star:before {
 }
 .fa-star:first-child {
   margin-left: 5%;
+}
+.product-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btnChoi {
+  background-color: #4c8787;
+  color: white;
 }
 /* Promotion */
 .khuyenmai img {
@@ -462,7 +494,14 @@ footer .container .row {
   font-size: 200%;
   color: white;
 }
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
 
+.footer-bottom p {
+  margin: 0;
+}
 /* Login */
 .checkout__form h3 {
   color: #1c1c1c;
@@ -538,7 +577,11 @@ footer .container .row {
   height: auto;
 }
 .game-info .game-info-content .huongdan {
-  display: flex;
+  display: block;
+  font-size: 20px;
+}
+.game-info-content h4 {
+  font-size: 25px;
 }
 #footer-game {
   margin-top: 10%;
