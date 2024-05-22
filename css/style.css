@@ -76,6 +76,12 @@ header.trangchu {
 .logo-icon .icon-link {
   margin-right: 30%; /* Khoảng cách giữa các nút */
 }
+.trangchu .logo-icon .icon-link {
+  /* margin-right: 20px; */
+}
+.trangchu .logo-icon {
+  width: 40%;
+}
 
 /* Loại bỏ khoảng cách cuối cùng */
 .logo-icon .icon-link:last-child {
@@ -84,6 +90,7 @@ header.trangchu {
 .logo-icon .icon-link:before {
   content: none;
 }
+
 /* end logo */
 /* menu */
 /* .navbar {
@@ -587,7 +594,14 @@ footer .container .row {
   margin-top: 10%;
 }
 /* End Game */
-
+/* user */
+.logo-icon .img-avatar {
+  width: 70%;
+  float: right;
+  margin: 0px 10px 0px 0px;
+  border-radius: 50%;
+}
+/* end user */
 /* repository */
 
 @media (max-width: 952px) {

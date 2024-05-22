@@ -234,7 +234,6 @@
         </div>
       </div>
     </section>
-
     <!-- footer -->
     <footer>
       <div class="container">
@@ -271,13 +270,89 @@
     </footer>
 
     <!-- Js Plugins -->
+    <script>
+      function validateForm() {
+        // Lấy giá trị từ các trường input
+        var firstName = $("#firstNameInput").val().trim();
+        var lastName = $("#lastNameInput").val().trim();
+        var email = $("#emailNameInput").val().trim();
+        var userName = $("#userNameInput").val().trim();
+        var password = $("#passInput").val();
+        var confirmPassword = $("#passAgainInput").val();
+        var phoneNumber = $("#numberInput").val().trim();
+
+        // Thiết lập biến để theo dõi lỗi
+        var errors = false;
+
+        // Xóa bất kỳ lỗi hiện có nào
+        $(".error-message").text("");
+
+        // Kiểm tra các điều kiện
+        if (firstName === "") {
+          $("#firstNameErrorMessage").text("Vui lòng nhập tên của bạn");
+          errors = true;
+        }
+
+        if (lastName === "") {
+          $("#lastNameErrorMessage").text("Vui lòng nhập họ của bạn");
+          errors = true;
+        }
+        if (userName === "") {
+          $("#userNameErrorMessage").text(
+            "Vui lòng nhập tên đăng nhập của bạn"
+          );
+          errors = true;
+        }
+        if (password === "") {
+          $("#passErrorMessage").text("Vui lòng nhập mật khẩu của bạn");
+          errors = true;
+        }
+        if (confirmPassword === "") {
+          $("#passAgainErrorMessage").text(
+            "Vui lòng nhập lại mật khẩu của bạn"
+          );
+          errors = true;
+        } else if (confirmPassword !== password) {
+          $("#passAgainErrorMessage").text("Mật khẩu của bạn không khớp");
+          errors = true;
+        }
+        if (phoneNumber === "") {
+          $("#numberErrorMessage").text("Vui lòng nhập số điện thoại của bạn");
+          errors = true;
+        }
+        if (email === "") {
+          $("#emailNameErrorMessage").text(
+            "Vui lòng nhập địa chỉ email của bạn"
+          );
+          errors = true;
+        } else if (!isValidEmail(email)) {
+          $("#emailNameErrorMessage").text("Địa chỉ email không hợp lệ");
+          errors = true;
+        }
+
+        // Kiểm tra các điều kiện khác ...
+
+        // Nếu không có lỗi, tiến hành đăng kí
+        if (!errors) {
+          // Gọi hàm hoặc thực hiện các thao tác đăng kí ở đây
+          alert("Đăng kí thành công!");
+        }
+      }
+
+      // Hàm kiểm tra địa chỉ email hợp lệ
+      function isValidEmail(email) {
+        var emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        return emailRegex.test(email);
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script> -->
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

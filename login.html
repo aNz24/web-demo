@@ -203,7 +203,80 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Tạo danh sách tài khoản người dùng
+      const users = [
+        { username: "user1", password: "password1", redirect: "user1.html" },
+        { username: "user2", password: "password2", redirect: "user2.html" },
+        { username: "user3", password: "password3", redirect: "user3.html" },
+      ];
 
+      // Hàm kiểm tra đăng nhập
+      function validateForm() {
+        const usernameInput = document.getElementById("userNameInput").value;
+        const passwordInput = document.getElementById("passInput").value;
+        const userNameErrorMessage = document.getElementById(
+          "userNameErrorMessage"
+        );
+        const passErrorMessage = document.getElementById("passErrorMessage");
+
+        // Xóa thông báo lỗi cũ
+        userNameErrorMessage.textContent = "";
+        passErrorMessage.textContent = "";
+
+        // Kiểm tra nếu người dùng không nhập gì
+        if (usernameInput === "") {
+          userNameErrorMessage.textContent = "Mời nhập tên đăng nhập.";
+        }
+        if (passwordInput === "") {
+          passErrorMessage.textContent = "Mời nhập mật khẩu.";
+        }
+        if (usernameInput === "" || passwordInput === "") {
+          return; // Dừng kiểm tra nếu một trong hai trường bị bỏ trống
+        }
+
+        // Tìm tài khoản người dùng khớp với thông tin đăng nhập
+        const user = users.find(
+          (user) =>
+            user.username === usernameInput && user.password === passwordInput
+        );
+
+        if (user) {
+          alert("Đăng nhập thành công!");
+          setTimeout(() => {
+            window.location.href = user.redirect; // Chuyển hướng đến trang tương ứng
+          }, 1000); // Chuyển hướng sau 1 giây
+        } else {
+          const userExists = users.find(
+            (user) => user.username === usernameInput
+          );
+          if (!userExists) {
+            userNameErrorMessage.textContent =
+              "Tên đăng nhập hoặc mật khẩu không đúng.";
+          } else {
+            passErrorMessage.textContent =
+              "Tên đăng nhập hoặc mật khẩu không đúng.";
+          }
+        }
+      }
+
+      // Thêm sự kiện keydown cho các trường nhập liệu
+      document
+        .getElementById("userNameInput")
+        .addEventListener("keydown", function (event) {
+          if (event.key === "Enter") {
+            event.preventDefault(); // Ngăn chặn form submit mặc định
+            document.getElementById("passInput").focus(); // Chuyển tiêu điểm đến trường mật khẩu
+          }
+        });
+      document
+        .getElementById("passInput")
+        .addEventListener("keydown", function (event) {
+          if (event.key === "Enter") {
+            validateForm(); // Gọi hàm validateForm khi nhấn Enter trong trường mật khẩu
+          }
+        });
+    </script>
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
