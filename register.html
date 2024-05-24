@@ -271,6 +271,23 @@
 
     <!-- Js Plugins -->
     <script>
+      $(document).ready(function () {
+        // Bắt sự kiện khi nhấn phím trên các trường input
+        $("input").keypress(function (event) {
+          if (event.which == 13) {
+            // Kiểm tra nếu phím nhấn là phím Enter
+            event.preventDefault(); // Ngăn chặn hành động mặc định của phím Enter (nếu có)
+
+            // Lấy ra index của ô input hiện tại
+            var index = $("input").index(this);
+
+            // Chuyển sang ô input tiếp theo (nếu có)
+            $("input")
+              .eq(index + 1)
+              .focus();
+          }
+        });
+      });
       function validateForm() {
         // Lấy giá trị từ các trường input
         var firstName = $("#firstNameInput").val().trim();
@@ -332,10 +349,11 @@
 
         // Kiểm tra các điều kiện khác ...
 
-        // Nếu không có lỗi, tiến hành đăng kí
+        // Nếu không có lỗi, tiến hành đăng kí và chuyển hướng
         if (!errors) {
           // Gọi hàm hoặc thực hiện các thao tác đăng kí ở đây
           alert("Đăng kí thành công!");
+          window.location.href = "user.html"; // Chuyển hướng sang trang user.html
         }
       }
 
