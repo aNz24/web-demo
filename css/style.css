@@ -559,7 +559,8 @@ footer .container .row {
 /* End login */
 
 /* Game */
-
+/*  */
+/*  */
 #unity-container.unity-desktop {
   left: 50%;
   /* top: 45%; */
@@ -567,7 +568,7 @@ footer .container .row {
   transform: translate(-50%, -50%);
 }
 .game-info {
-  margin-top: 25%;
+  margin-top: 15%;
 }
 .game-info h3 {
   font-size: 30px;
