@@ -12,17 +12,19 @@ body {
   font-family: "Roboto", sans-serif;
 }
 /* phần header */
+
 header.trangchu {
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
-  height: 225px;
+  height: auto;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .flag {
   display: flex;
+  height: auto;
 }
 .logo {
   display: flex;
@@ -74,7 +76,7 @@ header.trangchu {
   color: white;
 }
 .logo-icon .icon-link {
-  margin-right: 30%; /* Khoảng cách giữa các nút */
+  margin-right: 21%;
 }
 .trangchu .logo-icon .icon-link {
   /* margin-right: 20px; */
@@ -85,7 +87,7 @@ header.trangchu {
 
 /* Loại bỏ khoảng cách cuối cùng */
 .logo-icon .icon-link:last-child {
-  margin-right: 0;
+  margin-right: 30px;
 }
 .logo-icon .icon-link:before {
   content: none;
@@ -610,7 +612,11 @@ footer .container .row {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 858px) {
+@media only screen and (max-width: 858px) {
+  header .flag {
+    display: block;
+    height: auto;
+  }
   .menu {
     width: 100%;
     max-height: 0;
